@@ -1,0 +1,21 @@
+# Core GUI Framework
+PyQt6>=6.0.0
+
+# Multimedia & Processing
+opencv-python>=4.5.0        # For video capture (cv2) and image processing
+numpy>=1.20.0               # For efficient array manipulation (audio/video buffers)
+PyAudio>=0.2.11             # For audio input/output
+av>=10.0.0                  # PyAV: FFmpeg wrapper for H.264 video encoding/decoding
+Pillow>=9.0.0               # Image manipulation (PIL)
+
+# Screen Capture & Window Management
+mss>=7.0.0                  # Fast cross-platform screen shots
+PyGetWindow>=0.0.9          # Window management/filtering (used in screen share)
+
+# Security & Networking
+pyOpenSSL>=23.0.0           # For generating self-signed certificates
+cryptography>=41.0.0        # Dependency for OpenSSL/TLS operations
+
+# Note: 'socket', 'threading', 'sys', 'signal', 'pickle', 'struct', 
+# 'logging', 'uuid', 'queue', 'time', 'hashlib', 'json', 'base64', 'ssl'
+# are standard Python library modules and do not need to be installed.

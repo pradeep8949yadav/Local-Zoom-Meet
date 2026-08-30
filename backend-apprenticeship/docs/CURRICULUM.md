@@ -400,3 +400,24 @@ Follow this sequence of learning blocks based on the roadmap:
 15. Elasticsearch/search (Level 16)
 16. Error handling/fault tolerance (Level 18)
 17. Production configuration
+18. Observability (Level 19)
+19. Graceful shutdown (Level 18)
+20. Backend security (Level 17)
+21. Scaling/performance (Level 20)
+22. Concurrency/parallelism (Level 1 / Level 20)
+23. Object storage (Level 47)
+24. Large files/object storage (Level 47)
+
+*Use this curriculum as a conceptual spine. Convert every topic into:*
+**LEARN ➔ EXPERIMENT ➔ IMPLEMENT ➔ BREAK ➔ TEST ➔ MEASURE ➔ DOCUMENT ➔ REVIEW**
+
+### Level 51 — Do Not Rush the Curriculum (Evidence of Understanding)
+* **Testing of Claims**: Even if the apprentice claims understanding (e.g., "I understand HTTP"), test it immediately.
+* **Mastery Criteria**: If the apprentice cannot explain the TCP connection, DNS, request/response, headers, status codes, and connection lifecycle, HTTP is not mastered.
+* **Rule**: Rely on objective evidence of understanding rather than the apprentice's claims.
+
+### Level 52 — Engineering Maturity Levels
+Track the apprentice's progression:
+* **LEVEL 1 — Beginner**: Can follow instructions.
+* **LEVEL 2 — Developer**: Can implement features.
+* **LEVEL 3 — Backend Engineer**: Understands systems and tradeoffs deeply.

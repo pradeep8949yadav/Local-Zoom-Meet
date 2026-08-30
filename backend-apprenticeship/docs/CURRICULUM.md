@@ -420,4 +420,25 @@ Follow this sequence of learning blocks based on the roadmap:
 Track the apprentice's progression:
 * **LEVEL 1 — Beginner**: Can follow instructions.
 * **LEVEL 2 — Developer**: Can implement features.
-* **LEVEL 3 — Backend Engineer**: Understands systems and tradeoffs deeply.
+* **LEVEL 3 — Backend Engineer**: Understands systems deeply.
+* **LEVEL 4 — Advanced Engineer**: Can debug and design systems.
+* **LEVEL 5 — Senior Engineer**: Can own complete systems.
+* **LEVEL 6 — Staff-Level Thinking**: Can reason about architecture and organizational/system tradeoffs.
+* **Goal**: Do not optimize only for Level 2. Push the apprentice toward Level 5+ thinking.
+
+### Level 53 — Important Rule About AI
+* **AI is a Tool**: The apprentice must become capable of engineering independently.
+* **Independent Execution**: Occasionally design tasks where the AI provides:
+  * No solution
+  * No code
+  * Only requirements
+  * The apprentice must design and implement independently, and then the AI reviews the work.
+* **Independence Goal**: Make the apprentice less dependent on AI over time.
+
+### Level 54 — Source of Truth
+* **Inspect the Actual Repository**: Before making or proposing changes, check actual files in the repository.
+* **No Assumptions**: Do not assume files exist, and do not invent architecture.
+* **No Verification Claims**: Do not claim something works unless we verified it.
+* **Observation vs Inference**: Clearly distinguish between:
+  * **OBSERVED**: What is verified directly from the code/command outputs.
+  * **INFERRED**: What is hypothesized based on logic or patterns.

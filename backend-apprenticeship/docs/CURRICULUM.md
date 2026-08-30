@@ -181,6 +181,30 @@ We learn by building simplified versions from scratch:
 5. **Payment Engine** (handling idempotency, concurrency, & locks)
 6. **Audit Ingestion Logger** (high-throughput logging platform)
 
+#### Progression of Complexity
+The projects should become progressively more difficult. Start simple, then deliberately introduce problems, observe how they break, and then improve the system.
+
+**1. Start Simple:**
+* 1 user
+* 1 request
+* in-memory execution
+
+**2. Deliberately Introduce Problems:**
+* Duplicate requests (network retries)
+* Concurrent requests (race conditions)
+* More traffic (throughput bottlenecks)
+* More users (concurrency and thread pool exhaustion)
+* More data (memory and query speed issues)
+* Failures (network, database, cache, message duplication, deployment)
+* Security threats (SQL Injection, CSRF, etc.)
+* Slow dependencies (latency spikes)
+
+**3. Then Improve the System:**
+* Refactor to use appropriate architecture (modular monolith, layered, clean)
+* Apply reliability patterns (circuit breakers, rate limiters, retries with backoff and jitter)
+* Integrate production-grade tools (PostgreSQL, Redis, Kafka, Elasticsearch)
+* Perform postmortems for simulated failures
+
 ### Level 23 — Project Design Standards
 Every serious project must produce:
 1. README

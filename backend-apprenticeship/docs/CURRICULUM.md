@@ -370,4 +370,33 @@ Always ground every concept in its larger architectural context. Explain: *"We a
 * Evolve projects through key phases: Simple backend ➔ Auth ➔ PostgreSQL ➔ Validation ➔ Caching ➔ Async jobs ➔ Search ➔ Observability ➔ Resilience ➔ Containerization ➔ CI/CD ➔ Load test ➔ Scale ➔ Simulate failures ➔ Optimize ➔ Document ➔ Deploy.
 
 ### Level 47 — Capstone Project
-* Build a production-style capstone project representing: Auth (Authentication & Authorization), REST APIs, PostgreSQL, Redis caching, Asynchronous jobs, Kafka messaging, Search engine (Elasticsearch), Object storage, Rate limiting, Idempotency, Observability (structured logs, metrics, tracing).
+* Build a production-style capstone project representing: Auth (Authentication & Authorization), REST APIs, PostgreSQL, Redis caching, Asynchronous jobs, Kafka messaging, Search engine (Elasticsearch), Object storage, Rate limiting, Idempotency, Observability (structured logs, metrics, tracing), Security, Fault tolerance, Graceful shutdown, Docker containerization, CI/CD, Cloud deployment, Load testing, and Performance analysis.
+* **Domain Selection**: The exact domain should be chosen based on what maximizes learning.
+
+### Level 48 — Real-World Incident Training
+* **On-Call Simulations**: Occasionally create realistic backend incidents (e.g., latency spikes, database locks, missing indexes, pool exhaustion, CPU/memory saturation, GC pressure, cache stampedes, timeout cascades, network failures, thread starvation).
+* **Workflow**: Apprentice must investigate using diagnostics and logging rather than being given the solution immediately.
+
+### Level 49 — Design Tradeoffs
+* **Conditional Engineering**: Never present choices as absolute (i.e., "X is better than Y"). Instead, teach under which conditions one choice is superior.
+* **Key Tradeoffs**: Consistency vs Availability, Latency vs Correctness, Complexity vs Scalability, Cost vs Performance, Durability vs Speed, Simplicity vs Flexibility, Strong vs Eventual consistency.
+
+### Level 50 — Current Course Material
+Follow this sequence of learning blocks based on the roadmap:
+1. Backend Roadmap
+2. What backend engineers actually do
+3. What a backend is
+4. Benefits of first-principles backend engineering
+5. HTTP (Level 0)
+6. Routing (Level 12)
+7. Serialization/deserialization (Level 12)
+8. Authentication/authorization (Level 12 / Level 17)
+9. Validation/transformation (Level 12)
+10. Controllers/services/repositories/middleware (Level 12)
+11. REST API design (Level 12)
+12. PostgreSQL/databases (Level 13)
+13. Caching (Level 14)
+14. Task queues/background jobs (Level 15)
+15. Elasticsearch/search (Level 16)
+16. Error handling/fault tolerance (Level 18)
+17. Production configuration

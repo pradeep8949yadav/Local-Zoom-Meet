@@ -105,16 +105,16 @@ Whenever a meaningful feature is completed, act as an extremely strict reviewer.
 * **DNS, TCP & UDP**: Domain resolution, connection-oriented vs connectionless protocols.
 * **TLS & HTTP**: Security handshake, request-response format.
 
-### Level 1 — Programming (Deep Java)
-* **Variables & Memory Model**: Stack vs Heap, reference types.
-* **JVM Internals**: Bytecode execution, ClassLoader, memory management, Garbage Collection (G1GC, ZGC).
-* **Object-Oriented Concepts**: Classes, Objects, Interfaces, Inheritance, Composition.
-* **Generics & Collections**: Thread-safe collections, map hashing, collision resolution.
-* **Strings**: Immutability, String Pool, `StringBuilder` vs `StringBuffer`.
-* **Streams & Lambdas**: Functional programming in Java.
-* **Exceptions**: Checked vs unchecked exceptions, error propagation.
-* **Concurrency**: Synchronization, locks, Executors, Thread Pools, Virtual Threads.
-* **Profiling & Benchmarks**: Analyzing performance under load.
+### Level 1 — Programming (Deep Go & Python)
+* **Memory Models & Allocations**: Escape Analysis in Go (Stack vs Heap), reference counting, generational GC, and memory management in Python.
+* **Go Concurrency**: Goroutines, Channels, Select, Mutexes, WaitGroups, Go Scheduler (G-M-P model).
+* **Python Concurrency**: GIL (Global Interpreter Lock) internals, Multithreading vs Multiprocessing, Asyncio (Event Loop).
+* **Type Systems & Objects**: Structs and Interfaces in Go, Duck typing and Type Hints in Python, Generics.
+* **OOP & Composition**: Composition vs Inheritance, Interfaces, magic/dunder methods in Python.
+* **Data Structures & Collections**: Slices & Maps in Go, Lists, Dicts, & Sets in Python (hashing, collision handling).
+* **Runtimes**: Go runtime overhead, CPython internals.
+* **Error Handling**: Defers, Panics, and Errors in Go, Try-Excepts and Exception propagation in Python.
+* **Profiling & Benchmarks**: Go pprof, Python cProfile, benchmarking code under concurrency.
 
 ### Level 12 — Backend Fundamentals
 * **Client/Server Architecture**
@@ -222,8 +222,8 @@ Every serious project must produce:
 13. Runbook & Troubleshooting Guide
 14. Postmortem (for a deliberately simulated failure)
 
-### Level 24 — Build Systems, Git and Terminal
-* **Build Systems**: Maven vs Gradle (understand why we choose one).
+### Level 24 — Dependency & Build Systems, Git and Terminal
+* **Dependency & Build Systems**: Go Modules (`go.mod`) in Go and virtual environments (`venv`, `poetry`, `pip`) in Python. Understand how dependencies are fetched, versioned, cached, and isolated.
 * **Git Under the Hood**: Understand what Git is actually storing (.git/objects: Blobs, Trees, Commits, Refs, Index).
 * **Git Operations**: init, status, add, commit, diff, log, branches, merge, rebase, reset, revert, cherry-pick, reflog, bisect, tags, remote repositories, pull requests, code reviews.
 
@@ -241,14 +241,14 @@ Every serious project must produce:
 * URL Shortener, Rate Limiter, Notification System, File Storage, Chat System, Job Scheduler, Search System, News Feed, Distributed Cache, Metrics Platform, Issue Tracking System, Project Management Platform.
 
 ### Level 29 — Atlassian-Level Engineering
-* High engineering standards emphasizing Java fundamentals, backend fundamentals, API design, and PostgreSQL.
+* High engineering standards emphasizing Go and Python fundamentals, backend fundamentals, API design, and PostgreSQL.
 
 ### Level 30 — Do Not Skip Data Structures and Algorithms
 Gradually teach DSA alongside backend development, connecting them to actual backend system use cases:
 * **Arrays & Lists**
 * **Hash Maps** (collision resolution, caching, indexing, in-memory lookup)
 * **Sets**
-* **Stacks** (JVM call stack)
+* **Stacks** (Goroutine stack / Execution call stack)
 * **Queues** (asynchronous processing, work queue)
 * **Linked Lists** (LRU cache internals)
 * **Trees & Heaps** (indexing, task scheduling)
@@ -263,20 +263,20 @@ Maintain a project-level learning journal in:
 * `/docs/GLOSSARY.md` (engineering terminology)
 
 ### Level 32 — Knowledge Gap Detection
-* Continuous monitoring for gaps in Networking, Concurrency, SQL, Git, Linux, Java, and Distributed Systems.
+* Continuous monitoring for gaps in Networking, Concurrency, SQL, Git, Linux, Go, Python, and Distributed Systems.
 * Stop and repair the foundation immediately. Do not keep building on a broken mental model.
 
 ### Level 33 — No Magic
 If something appears magical, investigate and peel back abstractions:
-* **Spring Dependency Injection**: How are objects instantiated?
+* **Frameworks & Magic**: How does Go's reflect package work or Python's decorator/metaclass system instantiate/modify things?
 * **HTTP Request**: How does it reach the process?
 * **Database Query**: How does PostgreSQL execute it?
 * **Redis Cache**: Where does the data live?
 * **Kafka Message**: Where is it stored?
 * **Docker Container**: What is actually isolated?
-* **Java Object**: Where does it live in memory?
-* **Thread**: What does the OS/JVM actually do?
-* **Framework Annotation**: What code/path does it influence?
+* **Go/Python Object**: Where does it live in memory? (Escape Analysis, Heap vs Stack, Pointers).
+* **Concurrency Primitives**: What does the OS/Runtime actually do? (Goroutines vs OS Threads vs Event Loop).
+* **Decorators / Reflection**: What code/path does it influence under the hood?
 
 ### Level 34 — Experiments
 Create tiny experiments over memorization:

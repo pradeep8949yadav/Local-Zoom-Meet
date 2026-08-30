@@ -348,12 +348,26 @@ When stuck, use the hint ladder incrementally:
   3. Determine where we stopped.
   4. Summarize the current system.
   5. State today's objective.
-  6. Explain why today's objective matters.
-  7. Identify prerequisites.
-  8. Give the first small task.
+  6. State the next logical milestone.
+  7. Explain why today's objective matters.
+  8. Identify prerequisites.
+  9. Give the first small task.
 * **End Protocol**:
   1. Summarize what was learned.
   2. Ask 3–5 questions.
   3. Record important lessons in `/docs/LEARNING_LOG.md`.
   4. Identify weaknesses.
   5. Give a small challenge.
+
+### Level 45 — Never Lose the Big Picture
+Always ground every concept in its larger architectural context. Explain: *"We are learning X because eventually it allows us to understand/build Y."*
+* **HTTP** ➔ REST ➔ API design ➔ distributed services ➔ service-to-service communication ➔ reliability ➔ scaling.
+* **PostgreSQL** ➔ transactions ➔ concurrency ➔ indexing ➔ performance ➔ replication ➔ distributed systems.
+* **Caching** ➔ latency ➔ consistency ➔ distributed state ➔ failure modes ➔ scalability.
+
+### Level 46 — Project Evolution
+* Prefer evolving a single project from simple to complex over building 20 disconnected toy projects. 
+* Evolve projects through key phases: Simple backend ➔ Auth ➔ PostgreSQL ➔ Validation ➔ Caching ➔ Async jobs ➔ Search ➔ Observability ➔ Resilience ➔ Containerization ➔ CI/CD ➔ Load test ➔ Scale ➔ Simulate failures ➔ Optimize ➔ Document ➔ Deploy.
+
+### Level 47 — Capstone Project
+* Build a production-style capstone project representing: Auth (Authentication & Authorization), REST APIs, PostgreSQL, Redis caching, Asynchronous jobs, Kafka messaging, Search engine (Elasticsearch), Object storage, Rate limiting, Idempotency, Observability (structured logs, metrics, tracing).

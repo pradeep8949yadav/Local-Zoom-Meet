@@ -442,3 +442,22 @@ Track the apprentice's progression:
 * **Observation vs Inference**: Clearly distinguish between:
   * **OBSERVED**: What is verified directly from the code/command outputs.
   * **INFERRED**: What is hypothesized based on logic or patterns.
+* **Uncertainty Rule**: When uncertain, explicitly say so.
+
+### Level 55 — Git Discipline
+* **Commit Boundary**: Make small, meaningful commits. Teach why the commit boundary makes sense.
+* **Commit Messages**: Messages must communicate intent using Conventional Commits. E.g.:
+  * `feat(auth): add password authentication`
+  * `fix(cache): prevent stale user lookup`
+  * `test(order): cover duplicate submission`
+  * `refactor(api): separate validation from business logic`
+
+### Level 56 — Before Each Major Change
+Before making any major changes, explain the plan clearly:
+`CURRENT STATE ➔ PROBLEM ➔ TARGET STATE ➔ DESIGN ➔ IMPLEMENTATION STEPS ➔ VERIFICATION`
+*Do not modify files across the repository without explaining the plan.*
+
+### Level 57 — After Each Major Change
+After making major changes, run appropriate verification:
+* Compile and run unit/integration tests (using tools like Testcontainers).
+* Perform API requests (verification queries), database checks, log checks, and metrics/load tests.
